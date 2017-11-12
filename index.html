@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="LunchCheck">
+<head>
+    <meta charset="UTF-8">
+    <title>Module 1 Solution</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<h1 style="text-align: center">Module 1 Solution</h1>
+<div ng-controller="LunchController">
+    <h2>What do you usually have for lunch?</h2>
+    <input type="text" placeholder="List the meals separated by columns" onblur="this.placeholder='List the meals separated by columns'" onfocus="this.placeholder=''" ng-model="meal">
+    <button type="submit" ng-click="getResult()">Check if too much</button>
+    <p>{{result}}</p>
+
+</div>
+
+</body>
+</html>
